@@ -1,7 +1,5 @@
 package com.nel.libalgorithm;
 
-import java.util.Scanner;
-
 /**
  * 例题1: 数塔取数问题
  *
