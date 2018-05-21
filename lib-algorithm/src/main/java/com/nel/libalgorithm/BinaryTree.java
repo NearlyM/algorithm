@@ -1,5 +1,7 @@
 package com.nel.libalgorithm;
 
+import java.util.Stack;
+
 /**
  * Description :https://blog.csdn.net/fengrunche/article/details/52305748
  * CreateTime : 2018/5/17 18:32
@@ -66,12 +68,29 @@ public class BinaryTree implements BinaryTreeAbs {
 
     @Override
     public void inOrderTraverse() {
+        System.out.println("中序遍历");
+        inOrderTraverse(root);
+        System.out.println();
+    }
 
+    private void inOrderTraverse(Node node) {
+        if (node == null) {
+            return;
+        }
+        inOrderTraverse(node.leftChild);
+        node.display();
+        inOrderTraverse(node.rightChild);
     }
 
     @Override
     public void inOrderByStack() {
-
+        Stack<Node> stack = new Stack<>();
+        Node current = root;
+        while (current != null || !stack.isEmpty()) {
+            while (current != null) {
+                stack.push(current);
+            }
+        }
     }
 
     @Override

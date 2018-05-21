@@ -16,4 +16,8 @@ public class Node {
     Node(int value) {
         this.value = value;
     }
+
+    public void display() {
+        System.out.print(this.value + "\t");
+    }
 }

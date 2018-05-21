@@ -49,8 +49,18 @@ public class Main {
 //        int n = in.nextInt();
 //        System.out.println(StepQuestion.method(n));
 
-        String a = "1A2C3D4B56"; //,10,
-        String b = "B1D23CA45B6A"; //,12
-        System.out.println(LCSQuestion.method(a, b));
+//        String a = "1A2C3D4B56"; //,10,
+//        String b = "B1D23CA45B6A"; //,12
+//        System.out.println(LCSQuestion.method(a, b));
+
+
+        BinaryTree tree = new BinaryTree(1);
+        tree.insert(6);
+        tree.insert(2);
+        tree.insert(8);
+        tree.insert(4);
+        tree.insert(5);
+
+        tree.inOrderTraverse();
     }
 }
